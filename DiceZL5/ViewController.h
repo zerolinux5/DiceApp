@@ -19,6 +19,16 @@
 @property (weak, nonatomic) IBOutlet UILabel *d12Int;
 @property (weak, nonatomic) IBOutlet UILabel *d20Int;
 
+@property (weak, nonatomic) IBOutlet UIStepper *d2Stepper;
+@property (weak, nonatomic) IBOutlet UIStepper *d6Stepper;
+@property (weak, nonatomic) IBOutlet UIStepper *d10Stepper;
+@property (weak, nonatomic) IBOutlet UIStepper *d16Stepper;
+@property (weak, nonatomic) IBOutlet UIStepper *d4Stepper;
+@property (weak, nonatomic) IBOutlet UIStepper *d8Stepper;
+@property (weak, nonatomic) IBOutlet UIStepper *d12Stepper;
+@property (weak, nonatomic) IBOutlet UIStepper *d20Stepper;
+
+
 - (IBAction)d2StepFunction:(UIStepper *)sender;
 - (IBAction)d6StepFunction:(UIStepper *)sender;
 - (IBAction)d10StepFunction:(UIStepper *)sender;

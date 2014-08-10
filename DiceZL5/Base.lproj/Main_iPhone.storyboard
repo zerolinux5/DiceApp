@@ -194,13 +194,21 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="d10Int" destination="CL7-uL-PWf" id="eGo-rz-LBl"/>
+                        <outlet property="d10Stepper" destination="bdj-mI-cpe" id="DbP-RZ-Lu6"/>
                         <outlet property="d12Int" destination="AVp-9P-gs6" id="B2R-EW-bGj"/>
+                        <outlet property="d12Stepper" destination="B2B-gq-pX8" id="4Su-Pc-PTh"/>
                         <outlet property="d16Int" destination="qWR-mq-8zU" id="Wol-Jx-0mx"/>
+                        <outlet property="d16Stepper" destination="c4P-cs-icG" id="aSK-AQ-TmL"/>
                         <outlet property="d20Int" destination="FsR-Q3-t0y" id="n8L-X1-WwI"/>
+                        <outlet property="d20Stepper" destination="6rR-fN-XKo" id="5LT-7P-CWv"/>
                         <outlet property="d2Int" destination="rDT-8E-FYv" id="xaf-8E-ejG"/>
+                        <outlet property="d2Stepper" destination="vNy-Zl-pzH" id="cSk-cT-wgr"/>
                         <outlet property="d4Int" destination="iqf-Rn-dAd" id="Lia-Cy-rCi"/>
+                        <outlet property="d4Stepper" destination="eSh-B3-R2S" id="jfQ-aR-KuX"/>
                         <outlet property="d6Int" destination="yyZ-vt-na7" id="KLQ-f1-qkp"/>
+                        <outlet property="d6Stepper" destination="HKw-Dz-rn3" id="9rk-e2-o4z"/>
                         <outlet property="d8Int" destination="QfC-43-XxQ" id="Mm3-go-EHL"/>
+                        <outlet property="d8Stepper" destination="ydx-C4-c6S" id="B5B-92-TaR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
