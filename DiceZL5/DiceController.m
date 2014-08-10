@@ -45,14 +45,31 @@
     [d20 setSides:20 setDice:_d20];
     
     int result = 0;
-    result += [d2 getNum];
-    result += [d4 getNum];
-    result += [d6 getNum];
-    result += [d8 getNum];
-    result += [d10 getNum];
-    result += [d12 getNum];
-    result += [d16 getNum];
-    result += [d20 getNum];
+    int temp = 0;
+    temp = [d2 getNum];
+    self.d2Int.text = [NSString stringWithFormat:@"%d", temp];
+    result += temp;
+    temp = [d4 getNum];
+    self.d4Int.text = [NSString stringWithFormat:@"%d", temp];
+    result += temp;
+    temp = [d6 getNum];
+    self.d6Int.text = [NSString stringWithFormat:@"%d", temp];
+    result += temp;
+    temp = [d8 getNum];
+    self.d8Int.text = [NSString stringWithFormat:@"%d", temp];
+    result += temp;
+    temp = [d10 getNum];
+    self.d10Int.text = [NSString stringWithFormat:@"%d", temp];
+    result += temp;
+    temp = [d12 getNum];
+    self.d12Int.text = [NSString stringWithFormat:@"%d", temp];
+    result += temp;
+    temp = [d16 getNum];
+    self.d16Int.text = [NSString stringWithFormat:@"%d", temp];
+    result += temp;
+    temp = [d20 getNum];
+    self.d20Int.text = [NSString stringWithFormat:@"%d", temp];
+    result += temp;
     
     self.result.text = [NSString stringWithFormat:@"%d", result];
 }
