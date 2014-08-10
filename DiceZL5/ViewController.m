@@ -58,7 +58,42 @@
 
 - (void)DiceControllerDidBack:(DiceController *)controller
 {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
+                                                    message:@"Clear Values:"
+                                                   delegate:self
+                                          cancelButtonTitle:@"Yes"
+                                          otherButtonTitles:@"No",nil];
+    
+    [alert show];
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
+    if([title isEqualToString:@"Yes"])
+    {
+        self.d2Stepper.value = 0;
+        self.d4Stepper.value = 0;
+        self.d6Stepper.value = 0;
+        self.d8Stepper.value = 0;
+        self.d10Stepper.value = 0;
+        self.d12Stepper.value = 0;
+        self.d16Stepper.value = 0;
+        self.d20Stepper.value = 0;
+        self.d2Int.text = [NSString stringWithFormat:@"%03d", (int)self.d2Stepper.value];
+        self.d4Int.text = [NSString stringWithFormat:@"%03d", (int)self.d4Stepper.value];
+        self.d6Int.text = [NSString stringWithFormat:@"%03d", (int)self.d6Stepper.value];
+        self.d8Int.text = [NSString stringWithFormat:@"%03d", (int)self.d8Stepper.value];
+        self.d10Int.text = [NSString stringWithFormat:@"%03d", (int)self.d10Stepper.value];
+        self.d12Int.text = [NSString stringWithFormat:@"%03d", (int)self.d12Stepper.value];
+        self.d16Int.text = [NSString stringWithFormat:@"%03d", (int)self.d16Stepper.value];
+        self.d20Int.text = [NSString stringWithFormat:@"%03d", (int)self.d20Stepper.value];
+        
+    }
+    else if([title isEqualToString:@"No"])
+    {
+    }
 }
 
 - (IBAction)d2StepFunction:(UIStepper *)sender {

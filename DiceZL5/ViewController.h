@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "DiceController.h"
 
-@interface ViewController : UIViewController <DiceControllerDelegate>
+@interface ViewController : UIViewController <DiceControllerDelegate, UIAlertViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UILabel *d2Int;
 @property (weak, nonatomic) IBOutlet UILabel *d6Int;
 @property (weak, nonatomic) IBOutlet UILabel *d10Int;
