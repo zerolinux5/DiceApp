@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA2BCFF01997E99600B77DFB /* d6.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BCFEF1997E99600B77DFB /* d6.png */; };
 		EA8D6AF519970DE600A5FD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8D6AF419970DE600A5FD36 /* Foundation.framework */; };
 		EA8D6AF719970DE600A5FD36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8D6AF619970DE600A5FD36 /* CoreGraphics.framework */; };
 		EA8D6AF919970DE600A5FD36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8D6AF819970DE600A5FD36 /* UIKit.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA2BCFEF1997E99600B77DFB /* d6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d6.png; sourceTree = "<group>"; };
 		EA8D6AF119970DE600A5FD36 /* DiceZL5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceZL5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8D6AF419970DE600A5FD36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA8D6AF619970DE600A5FD36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA2BCFF11997E99C00B77DFB /* Dice */ = {
+			isa = PBXGroup;
+			children = (
+				EAABD50219973B09002F1694 /* Dice.h */,
+				EAABD50319973B09002F1694 /* Dice.m */,
+				EA2BCFEF1997E99600B77DFB /* d6.png */,
+			);
+			name = Dice;
+			sourceTree = "<group>";
+		};
 		EA8D6AE819970DE600A5FD36 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +132,7 @@
 		EA8D6AFA19970DE600A5FD36 /* DiceZL5 */ = {
 			isa = PBXGroup;
 			children = (
+				EA2BCFF11997E99C00B77DFB /* Dice */,
 				EA8D6B0319970DE600A5FD36 /* AppDelegate.h */,
 				EA8D6B0419970DE600A5FD36 /* AppDelegate.m */,
 				EA8D6B0619970DE600A5FD36 /* Main_iPhone.storyboard */,
@@ -137,8 +150,6 @@
 		EA8D6AFB19970DE600A5FD36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EAABD50219973B09002F1694 /* Dice.h */,
-				EAABD50319973B09002F1694 /* Dice.m */,
 				EA8D6AFC19970DE600A5FD36 /* DiceZL5-Info.plist */,
 				EA8D6AFD19970DE600A5FD36 /* InfoPlist.strings */,
 				EA8D6B0019970DE600A5FD36 /* main.m */,
@@ -241,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA2BCFF01997E99600B77DFB /* d6.png in Resources */,
 				EA8D6B0B19970DE700A5FD36 /* Main_iPad.storyboard in Resources */,
 				EA8D6B1019970DE700A5FD36 /* Images.xcassets in Resources */,
 				EA8D6B0819970DE600A5FD36 /* Main_iPhone.storyboard in Resources */,
