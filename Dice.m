@@ -27,7 +27,7 @@
 -(int) getNum{
     int randomNum = 0;
     for(int i = 0; i < dice;i++){
-        randomNum += ((arc4random() % value) + 1);
+        randomNum += (arc4random_uniform(value) + 1);
     }
     return randomNum;
 }

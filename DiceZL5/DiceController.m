@@ -30,19 +30,19 @@
     Dice *d2 = [[Dice alloc] init];
     [d2 setSides:2 setDice:_d2];
     Dice *d4 = [[Dice alloc] init];
-    [d2 setSides:4 setDice:_d4];
+    [d4 setSides:4 setDice:_d4];
     Dice *d6 = [[Dice alloc] init];
-    [d2 setSides:6 setDice:_d6];
+    [d6 setSides:6 setDice:_d6];
     Dice *d8 = [[Dice alloc] init];
-    [d2 setSides:8 setDice:_d8];
+    [d8 setSides:8 setDice:_d8];
     Dice *d10 = [[Dice alloc] init];
-    [d2 setSides:10 setDice:_d10];
+    [d10 setSides:10 setDice:_d10];
     Dice *d12 = [[Dice alloc] init];
-    [d2 setSides:12 setDice:_d12];
+    [d12 setSides:12 setDice:_d12];
     Dice *d16 = [[Dice alloc] init];
-    [d2 setSides:16 setDice:_d16];
+    [d16 setSides:16 setDice:_d16];
     Dice *d20 = [[Dice alloc] init];
-    [d2 setSides:20 setDice:_d20];
+    [d20 setSides:20 setDice:_d20];
     
     int result = 0;
     result += [d2 getNum];
