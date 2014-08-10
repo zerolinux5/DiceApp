@@ -130,30 +130,51 @@
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="HKw-Dz-rn3">
                                 <rect key="frame" x="135" y="91" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="d6StepFunction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="ouI-6W-lwc"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="eSh-B3-R2S">
                                 <rect key="frame" x="77" y="238" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="d4StepFunction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="VyX-YV-SA2"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ydx-C4-c6S">
                                 <rect key="frame" x="193" y="238" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="d8StepFunction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="2ju-3i-2Fm"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="bdj-mI-cpe">
                                 <rect key="frame" x="280" y="91" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="d10StepFunction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="d3s-Bl-YVp"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="c4P-cs-icG">
                                 <rect key="frame" x="396" y="91" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="d16StepFunction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Zec-u1-62t"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="B2B-gq-pX8">
                                 <rect key="frame" x="338" y="238" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="d12StepFunction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="ZUp-uE-fMS"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="6rR-fN-XKo">
                                 <rect key="frame" x="454" y="238" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="d20StepFunction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Ko7-aB-ebW"/>
+                                </connections>
                             </stepper>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbc-2m-eHr">
                                 <rect key="frame" x="234" y="128" width="100" height="70"/>
@@ -172,7 +193,14 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="d10Int" destination="CL7-uL-PWf" id="eGo-rz-LBl"/>
+                        <outlet property="d12Int" destination="AVp-9P-gs6" id="B2R-EW-bGj"/>
+                        <outlet property="d16Int" destination="qWR-mq-8zU" id="Wol-Jx-0mx"/>
+                        <outlet property="d20Int" destination="FsR-Q3-t0y" id="n8L-X1-WwI"/>
                         <outlet property="d2Int" destination="rDT-8E-FYv" id="xaf-8E-ejG"/>
+                        <outlet property="d4Int" destination="iqf-Rn-dAd" id="Lia-Cy-rCi"/>
+                        <outlet property="d6Int" destination="yyZ-vt-na7" id="KLQ-f1-qkp"/>
+                        <outlet property="d8Int" destination="QfC-43-XxQ" id="Mm3-go-EHL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

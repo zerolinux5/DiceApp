@@ -44,4 +44,39 @@
     int value = sender.value;
     self.d2Int.text = [NSString stringWithFormat:@"%03d", value];
 }
+
+- (IBAction)d6StepFunction:(UIStepper *)sender {
+    int value = sender.value;
+    self.d6Int.text = [NSString stringWithFormat:@"%03d", value];
+}
+
+- (IBAction)d10StepFunction:(UIStepper *)sender {
+    int value = sender.value;
+    self.d10Int.text = [NSString stringWithFormat:@"%03d", value];
+}
+
+- (IBAction)d16StepFunction:(UIStepper *)sender {
+    int value = sender.value;
+    self.d16Int.text = [NSString stringWithFormat:@"%03d", value];
+}
+
+- (IBAction)d4StepFunction:(UIStepper *)sender {
+    int value = sender.value;
+    self.d4Int.text = [NSString stringWithFormat:@"%03d", value];
+}
+
+- (IBAction)d8StepFunction:(UIStepper *)sender {
+    int value = sender.value;
+    self.d8Int.text = [NSString stringWithFormat:@"%03d", value];
+}
+
+- (IBAction)d12StepFunction:(UIStepper *)sender {
+    int value = sender.value;
+    self.d12Int.text = [NSString stringWithFormat:@"%03d", value];
+}
+
+- (IBAction)d20StepFunction:(UIStepper *)sender {
+    int value = sender.value;
+    self.d20Int.text = [NSString stringWithFormat:@"%03d", value];
+}
 @end
