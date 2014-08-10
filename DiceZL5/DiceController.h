@@ -18,4 +18,13 @@
 @property (nonatomic, weak) id <DiceControllerDelegate> delegate;
 - (IBAction)newRoll:(id)sender;
 
+@property(nonatomic) int d2;
+@property(nonatomic) int d4;
+@property(nonatomic) int d6;
+@property(nonatomic) int d8;
+@property(nonatomic) int d10;
+@property(nonatomic) int d12;
+@property(nonatomic) int d16;
+@property(nonatomic) int d20;
+
 @end

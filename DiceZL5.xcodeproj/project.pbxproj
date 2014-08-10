@@ -22,6 +22,7 @@
 		EA8D6B1919970DE700A5FD36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8D6AF819970DE600A5FD36 /* UIKit.framework */; };
 		EA8D6B2119970DE700A5FD36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA8D6B1F19970DE700A5FD36 /* InfoPlist.strings */; };
 		EA8D6B2319970DE700A5FD36 /* DiceZL5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8D6B2219970DE700A5FD36 /* DiceZL5Tests.m */; };
+		EAABD50419973B09002F1694 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = EAABD50319973B09002F1694 /* Dice.m */; };
 		EAC3B1D4199726B900127D05 /* DiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC3B1D3199726B900127D05 /* DiceController.m */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		EA8D6B1E19970DE700A5FD36 /* DiceZL5Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiceZL5Tests-Info.plist"; sourceTree = "<group>"; };
 		EA8D6B2019970DE700A5FD36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA8D6B2219970DE700A5FD36 /* DiceZL5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceZL5Tests.m; sourceTree = "<group>"; };
+		EAABD50219973B09002F1694 /* Dice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dice.h; path = ../Dice.h; sourceTree = "<group>"; };
+		EAABD50319973B09002F1694 /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dice.m; path = ../Dice.m; sourceTree = "<group>"; };
 		EAC3B1D2199726B900127D05 /* DiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiceController.h; sourceTree = "<group>"; };
 		EAC3B1D3199726B900127D05 /* DiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +137,8 @@
 		EA8D6AFB19970DE600A5FD36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EAABD50219973B09002F1694 /* Dice.h */,
+				EAABD50319973B09002F1694 /* Dice.m */,
 				EA8D6AFC19970DE600A5FD36 /* DiceZL5-Info.plist */,
 				EA8D6AFD19970DE600A5FD36 /* InfoPlist.strings */,
 				EA8D6B0019970DE600A5FD36 /* main.m */,
@@ -258,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAABD50419973B09002F1694 /* Dice.m in Sources */,
 				EAC3B1D4199726B900127D05 /* DiceController.m in Sources */,
 				EA8D6B0E19970DE700A5FD36 /* ViewController.m in Sources */,
 				EA8D6B0519970DE600A5FD36 /* AppDelegate.m in Sources */,

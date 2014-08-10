@@ -7,9 +7,11 @@
 //
 
 #import "DiceController.h"
+#import "Dice.h"
 
-@interface DiceController ()
-
+@interface DiceController (){
+    int diceArray[8];
+}
 @end
 
 @implementation DiceController
@@ -27,6 +29,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    NSLog(@"This is value number %d",_d2);
+    NSLog(@"This is value number %d",_d4);
+    NSLog(@"This is value number %d",_d6);
+    NSLog(@"This is value number %d",_d8);
+    NSLog(@"This is value number %d",_d10);
+    NSLog(@"This is value number %d",_d12);
+    NSLog(@"This is value number %d",_d16);
+    NSLog(@"This is value number %d",_d20);
 }
 
 - (void)didReceiveMemoryWarning
