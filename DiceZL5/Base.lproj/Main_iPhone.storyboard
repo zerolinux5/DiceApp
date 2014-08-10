@@ -311,7 +311,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d2.png" translatesAutoresizingMaskIntoConstraints="NO" id="wLO-0o-DCI">
-                                <rect key="frame" x="30" y="15" width="60" height="60"/>
+                                <rect key="frame" x="30" y="20" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d8.png" translatesAutoresizingMaskIntoConstraints="NO" id="y5N-2M-adH">
+                                <rect key="frame" x="15" y="178" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -339,6 +343,7 @@
     <resources>
         <image name="d2.png" width="60" height="60"/>
         <image name="d6.png" width="90" height="90"/>
+        <image name="d8.png" width="60" height="60"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
