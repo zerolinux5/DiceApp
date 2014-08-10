@@ -27,4 +27,7 @@
 @property(nonatomic) int d16;
 @property(nonatomic) int d20;
 
+@property (weak, nonatomic) IBOutlet UILabel *result;
+
+
 @end

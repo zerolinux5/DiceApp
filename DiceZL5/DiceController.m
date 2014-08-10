@@ -9,9 +9,7 @@
 #import "DiceController.h"
 #import "Dice.h"
 
-@interface DiceController (){
-    int diceArray[8];
-}
+@interface DiceController ()
 @end
 
 @implementation DiceController
@@ -29,15 +27,34 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
-    NSLog(@"This is value number %d",_d2);
-    NSLog(@"This is value number %d",_d4);
-    NSLog(@"This is value number %d",_d6);
-    NSLog(@"This is value number %d",_d8);
-    NSLog(@"This is value number %d",_d10);
-    NSLog(@"This is value number %d",_d12);
-    NSLog(@"This is value number %d",_d16);
-    NSLog(@"This is value number %d",_d20);
+    Dice *d2 = [[Dice alloc] init];
+    [d2 setSides:2 setDice:_d2];
+    Dice *d4 = [[Dice alloc] init];
+    [d2 setSides:4 setDice:_d4];
+    Dice *d6 = [[Dice alloc] init];
+    [d2 setSides:6 setDice:_d6];
+    Dice *d8 = [[Dice alloc] init];
+    [d2 setSides:8 setDice:_d8];
+    Dice *d10 = [[Dice alloc] init];
+    [d2 setSides:10 setDice:_d10];
+    Dice *d12 = [[Dice alloc] init];
+    [d2 setSides:12 setDice:_d12];
+    Dice *d16 = [[Dice alloc] init];
+    [d2 setSides:16 setDice:_d16];
+    Dice *d20 = [[Dice alloc] init];
+    [d2 setSides:20 setDice:_d20];
+    
+    int result = 0;
+    result += [d2 getNum];
+    result += [d4 getNum];
+    result += [d6 getNum];
+    result += [d8 getNum];
+    result += [d10 getNum];
+    result += [d12 getNum];
+    result += [d16 getNum];
+    result += [d20 getNum];
+    
+    self.result.text = [NSString stringWithFormat:@"%d", result];
 }
 
 - (void)didReceiveMemoryWarning

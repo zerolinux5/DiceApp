@@ -10,7 +10,7 @@
 
 @interface Dice : NSObject
 
--(void) setSides:(int) numOfSides;
+-(void) setSides:(int)numOfSides setDice:(int)numOfDice;
 -(int) getNum;
 
 @end

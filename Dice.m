@@ -13,17 +13,22 @@
 {
 @private
     int value;
+    int dice;
 }
 @end
 
 @implementation Dice
 
--(void) setSides:(int) numOfSides{
+-(void) setSides:(int)numOfSides setDice:(int)numOfDice{
     value = numOfSides;
+    dice = numOfDice;
 }
 
 -(int) getNum{
-    int randomNum =(arc4random() % value) + 1;
+    int randomNum = 0;
+    for(int i = 0; i < dice;i++){
+        randomNum += ((arc4random() % value) + 1);
+    }
     return randomNum;
 }
 

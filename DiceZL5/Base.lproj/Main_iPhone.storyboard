@@ -247,6 +247,9 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="result" destination="QGV-HC-UjE" id="5sw-GQ-vMg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Phq-RU-abx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
