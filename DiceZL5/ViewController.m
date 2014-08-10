@@ -40,4 +40,8 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)d2StepFunction:(UIStepper *)sender {
+    int value = sender.value;
+    self.d2Int.text = [NSString stringWithFormat:@"%03d", value];
+}
 @end

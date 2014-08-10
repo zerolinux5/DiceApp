@@ -10,5 +10,7 @@
 #import "DiceController.h"
 
 @interface ViewController : UIViewController <DiceControllerDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *d2Int;
+- (IBAction)d2StepFunction:(UIStepper *)sender;
 
 @end
