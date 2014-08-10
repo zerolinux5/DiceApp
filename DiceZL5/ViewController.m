@@ -26,4 +26,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"dice"]) {
+        
+        DiceController *diceController = (DiceController *)[segue destinationViewController];
+        diceController.delegate = self;
+    }
+}
+
+- (void)DiceControllerDidBack:(DiceController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

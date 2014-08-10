@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DiceController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <DiceControllerDelegate>
 
 @end
