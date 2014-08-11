@@ -11,6 +11,9 @@
 		EA2BCFF51997EDC900B77DFB /* d2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BCFF41997EDC900B77DFB /* d2.png */; };
 		EA2BCFF91998215D00B77DFB /* d8.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BCFF81998215D00B77DFB /* d8.png */; };
 		EA2BCFFB19982CD800B77DFB /* d4.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BCFFA19982CD800B77DFB /* d4.png */; };
+		EA2BCFFF1998397500B77DFB /* d10.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BCFFE1998397500B77DFB /* d10.png */; };
+		EA2BD0031998415C00B77DFB /* d12.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BD0021998415C00B77DFB /* d12.png */; };
+		EA2BD0051998446800B77DFB /* d20.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BD0041998446800B77DFB /* d20.png */; };
 		EA8D6AF519970DE600A5FD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8D6AF419970DE600A5FD36 /* Foundation.framework */; };
 		EA8D6AF719970DE600A5FD36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8D6AF619970DE600A5FD36 /* CoreGraphics.framework */; };
 		EA8D6AF919970DE600A5FD36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8D6AF819970DE600A5FD36 /* UIKit.framework */; };
@@ -45,6 +48,9 @@
 		EA2BCFF41997EDC900B77DFB /* d2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d2.png; sourceTree = "<group>"; };
 		EA2BCFF81998215D00B77DFB /* d8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d8.png; sourceTree = "<group>"; };
 		EA2BCFFA19982CD800B77DFB /* d4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d4.png; sourceTree = "<group>"; };
+		EA2BCFFE1998397500B77DFB /* d10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d10.png; sourceTree = "<group>"; };
+		EA2BD0021998415C00B77DFB /* d12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d12.png; sourceTree = "<group>"; };
+		EA2BD0041998446800B77DFB /* d20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d20.png; sourceTree = "<group>"; };
 		EA8D6AF119970DE600A5FD36 /* DiceZL5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceZL5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8D6AF419970DE600A5FD36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA8D6AF619970DE600A5FD36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,6 +104,9 @@
 		EA2BCFF11997E99C00B77DFB /* Dice */ = {
 			isa = PBXGroup;
 			children = (
+				EA2BD0041998446800B77DFB /* d20.png */,
+				EA2BD0021998415C00B77DFB /* d12.png */,
+				EA2BCFFE1998397500B77DFB /* d10.png */,
 				EA2BCFFA19982CD800B77DFB /* d4.png */,
 				EA2BCFF81998215D00B77DFB /* d8.png */,
 				EA2BCFF41997EDC900B77DFB /* d2.png */,
@@ -264,9 +273,12 @@
 				EA2BCFF01997E99600B77DFB /* d6.png in Resources */,
 				EA2BCFFB19982CD800B77DFB /* d4.png in Resources */,
 				EA8D6B0B19970DE700A5FD36 /* Main_iPad.storyboard in Resources */,
+				EA2BD0031998415C00B77DFB /* d12.png in Resources */,
 				EA8D6B1019970DE700A5FD36 /* Images.xcassets in Resources */,
+				EA2BD0051998446800B77DFB /* d20.png in Resources */,
 				EA2BCFF91998215D00B77DFB /* d8.png in Resources */,
 				EA2BCFF51997EDC900B77DFB /* d2.png in Resources */,
+				EA2BCFFF1998397500B77DFB /* d10.png in Resources */,
 				EA8D6B0819970DE600A5FD36 /* Main_iPhone.storyboard in Resources */,
 				EA8D6AFF19970DE600A5FD36 /* InfoPlist.strings in Resources */,
 			);

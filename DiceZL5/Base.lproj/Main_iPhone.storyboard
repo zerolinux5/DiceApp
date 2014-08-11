@@ -322,6 +322,18 @@
                                 <rect key="frame" x="478" y="18" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d10.png" translatesAutoresizingMaskIntoConstraints="NO" id="KuA-zr-HWi">
+                                <rect key="frame" x="17" y="178" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d12.png" translatesAutoresizingMaskIntoConstraints="NO" id="eEK-I9-ano">
+                                <rect key="frame" x="493" y="178" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d20.png" translatesAutoresizingMaskIntoConstraints="NO" id="5R7-f4-XXy">
+                                <rect key="frame" x="406" y="243" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -345,7 +357,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="d10.png" width="60" height="60"/>
+        <image name="d12.png" width="60" height="60"/>
         <image name="d2.png" width="60" height="60"/>
+        <image name="d20.png" width="60" height="60"/>
         <image name="d4.png" width="60" height="60"/>
         <image name="d6.png" width="90" height="90"/>
         <image name="d8.png" width="60" height="60"/>
