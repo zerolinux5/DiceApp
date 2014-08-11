@@ -15,6 +15,7 @@
 		EA2BD0031998415C00B77DFB /* d12.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BD0021998415C00B77DFB /* d12.png */; };
 		EA2BD0051998446800B77DFB /* d20.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BD0041998446800B77DFB /* d20.png */; };
 		EA2BD0071998472300B77DFB /* d16.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BD0061998472300B77DFB /* d16.png */; };
+		EA2BD00B199849F700B77DFB /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BD00A199849F700B77DFB /* Back.png */; };
 		EA8D6AF519970DE600A5FD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8D6AF419970DE600A5FD36 /* Foundation.framework */; };
 		EA8D6AF719970DE600A5FD36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8D6AF619970DE600A5FD36 /* CoreGraphics.framework */; };
 		EA8D6AF919970DE600A5FD36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8D6AF819970DE600A5FD36 /* UIKit.framework */; };
@@ -53,6 +54,7 @@
 		EA2BD0021998415C00B77DFB /* d12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d12.png; sourceTree = "<group>"; };
 		EA2BD0041998446800B77DFB /* d20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d20.png; sourceTree = "<group>"; };
 		EA2BD0061998472300B77DFB /* d16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d16.png; sourceTree = "<group>"; };
+		EA2BD00A199849F700B77DFB /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back.png; sourceTree = "<group>"; };
 		EA8D6AF119970DE600A5FD36 /* DiceZL5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceZL5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8D6AF419970DE600A5FD36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA8D6AF619970DE600A5FD36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,6 +108,7 @@
 		EA2BCFF11997E99C00B77DFB /* Dice */ = {
 			isa = PBXGroup;
 			children = (
+				EA2BD00A199849F700B77DFB /* Back.png */,
 				EA2BD0061998472300B77DFB /* d16.png */,
 				EA2BD0041998446800B77DFB /* d20.png */,
 				EA2BD0021998415C00B77DFB /* d12.png */,
@@ -273,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA2BD00B199849F700B77DFB /* Back.png in Resources */,
 				EA2BCFF01997E99600B77DFB /* d6.png in Resources */,
 				EA2BCFFB19982CD800B77DFB /* d4.png in Resources */,
 				EA8D6B0B19970DE700A5FD36 /* Main_iPad.storyboard in Resources */,
@@ -446,6 +450,7 @@
 				GCC_PREFIX_HEADER = "DiceZL5/DiceZL5-Prefix.pch";
 				INFOPLIST_FILE = "DiceZL5/DiceZL5-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -459,6 +464,7 @@
 				GCC_PREFIX_HEADER = "DiceZL5/DiceZL5-Prefix.pch";
 				INFOPLIST_FILE = "DiceZL5/DiceZL5-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
