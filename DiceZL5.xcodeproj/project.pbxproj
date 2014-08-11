@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA28D5981998848600662CDB /* icon_58.png in Resources */ = {isa = PBXBuildFile; fileRef = EA28D5951998848600662CDB /* icon_58.png */; };
+		EA28D5991998848600662CDB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA28D5961998848600662CDB /* icon.png */; };
+		EA28D59A1998848600662CDB /* icon_80.png in Resources */ = {isa = PBXBuildFile; fileRef = EA28D5971998848600662CDB /* icon_80.png */; };
 		EA2BCFF01997E99600B77DFB /* d6.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BCFEF1997E99600B77DFB /* d6.png */; };
 		EA2BCFF51997EDC900B77DFB /* d2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BCFF41997EDC900B77DFB /* d2.png */; };
 		EA2BCFF91998215D00B77DFB /* d8.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BCFF81998215D00B77DFB /* d8.png */; };
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA28D5951998848600662CDB /* icon_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_58.png; sourceTree = "<group>"; };
+		EA28D5961998848600662CDB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		EA28D5971998848600662CDB /* icon_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_80.png; sourceTree = "<group>"; };
 		EA2BCFEF1997E99600B77DFB /* d6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d6.png; sourceTree = "<group>"; };
 		EA2BCFF41997EDC900B77DFB /* d2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d2.png; sourceTree = "<group>"; };
 		EA2BCFF81998215D00B77DFB /* d8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d8.png; sourceTree = "<group>"; };
@@ -108,6 +114,9 @@
 		EA2BCFF11997E99C00B77DFB /* Dice */ = {
 			isa = PBXGroup;
 			children = (
+				EA28D5951998848600662CDB /* icon_58.png */,
+				EA28D5961998848600662CDB /* icon.png */,
+				EA28D5971998848600662CDB /* icon_80.png */,
 				EA2BD00A199849F700B77DFB /* Back.png */,
 				EA2BD0061998472300B77DFB /* d16.png */,
 				EA2BD0041998446800B77DFB /* d20.png */,
@@ -287,8 +296,11 @@
 				EA2BCFF51997EDC900B77DFB /* d2.png in Resources */,
 				EA2BCFFF1998397500B77DFB /* d10.png in Resources */,
 				EA2BD0071998472300B77DFB /* d16.png in Resources */,
+				EA28D5991998848600662CDB /* icon.png in Resources */,
 				EA8D6B0819970DE600A5FD36 /* Main_iPhone.storyboard in Resources */,
 				EA8D6AFF19970DE600A5FD36 /* InfoPlist.strings in Resources */,
+				EA28D59A1998848600662CDB /* icon_80.png in Resources */,
+				EA28D5981998848600662CDB /* icon_58.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
