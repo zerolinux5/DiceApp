@@ -17,6 +17,7 @@
 @interface DiceController : UIViewController <UITextViewDelegate>
 @property (nonatomic, weak) id <DiceControllerDelegate> delegate;
 - (IBAction)newRoll:(id)sender;
+- (IBAction)reRoll:(id)sender;
 
 @property(nonatomic) int d2;
 @property(nonatomic) int d4;

@@ -26,6 +26,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self diceRoll];
+}
+
+-(void)diceRoll
+{
     // Do any additional setup after loading the view.
     Dice *d2 = [[Dice alloc] init];
     [d2 setSides:2 setDice:_d2];
@@ -93,5 +98,9 @@
 
 - (IBAction)newRoll:(id)sender {
     [self.delegate DiceControllerDidBack:self];
+}
+
+- (IBAction)reRoll:(id)sender {
+    [self diceRoll];
 }
 @end
