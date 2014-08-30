@@ -30,14 +30,5 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *result;
 
-@property (weak, nonatomic) IBOutlet UILabel *d2Int;
-@property (weak, nonatomic) IBOutlet UILabel *d6Int;
-@property (weak, nonatomic) IBOutlet UILabel *d10Int;
-@property (weak, nonatomic) IBOutlet UILabel *d16Int;
-@property (weak, nonatomic) IBOutlet UILabel *d4Int;
-@property (weak, nonatomic) IBOutlet UILabel *d8Int;
-@property (weak, nonatomic) IBOutlet UILabel *d12Int;
-@property (weak, nonatomic) IBOutlet UILabel *d20Int;
-
 
 @end
