@@ -311,6 +311,9 @@
                                 <state key="normal" title="D8">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="d8Show:" destination="dKH-X3-VU9" eventType="touchUpInside" id="V5u-3B-cMh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoX-NQ-1sE">
                                 <rect key="frame" x="180" y="66" width="46" height="30"/>
@@ -318,6 +321,9 @@
                                 <state key="normal" title="D6">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="d6Show:" destination="dKH-X3-VU9" eventType="touchUpInside" id="ooP-Kr-ONT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7i-Gk-2jB">
                                 <rect key="frame" x="288" y="66" width="46" height="30"/>
@@ -325,6 +331,9 @@
                                 <state key="normal" title="D10">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="d10Show:" destination="dKH-X3-VU9" eventType="touchUpInside" id="TVt-IR-I43"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZC-SC-SM4">
                                 <rect key="frame" x="126" y="66" width="46" height="30"/>
@@ -332,6 +341,9 @@
                                 <state key="normal" title="D4">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="d4Show:" destination="dKH-X3-VU9" eventType="touchUpInside" id="TzR-Hy-eQV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM7-9z-GxR">
                                 <rect key="frame" x="342" y="66" width="46" height="30"/>
@@ -339,6 +351,9 @@
                                 <state key="normal" title="D12">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="d12Show:" destination="dKH-X3-VU9" eventType="touchUpInside" id="pvL-YB-L4Z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ju-Kt-RcK">
                                 <rect key="frame" x="72" y="66" width="46" height="30"/>
@@ -347,6 +362,9 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="d2Show:" destination="dKH-X3-VU9" eventType="touchUpInside" id="YWm-V1-WLw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zO9-ra-Kht">
                                 <rect key="frame" x="396" y="66" width="46" height="30"/>
@@ -354,6 +372,9 @@
                                 <state key="normal" title="D16">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="d16Show:" destination="dKH-X3-VU9" eventType="touchUpInside" id="gpE-NC-izb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3g-Sw-AHp">
                                 <rect key="frame" x="450" y="66" width="46" height="30"/>
@@ -361,6 +382,9 @@
                                 <state key="normal" title="D20">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="d20Show:" destination="dKH-X3-VU9" eventType="touchUpInside" id="LMM-ub-daA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -387,6 +411,14 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="d10Button" destination="Y7i-Gk-2jB" id="Cmn-wm-7xK"/>
+                        <outlet property="d12Button" destination="GM7-9z-GxR" id="Dog-iA-J0F"/>
+                        <outlet property="d16Button" destination="zO9-ra-Kht" id="Quj-FA-0OB"/>
+                        <outlet property="d20Button" destination="U3g-Sw-AHp" id="MVk-wL-RZD"/>
+                        <outlet property="d2Button" destination="2ju-Kt-RcK" id="IKH-hJ-fYv"/>
+                        <outlet property="d4Button" destination="1ZC-SC-SM4" id="hAE-XH-3sO"/>
+                        <outlet property="d6Button" destination="SoX-NQ-1sE" id="eO3-7P-aLw"/>
+                        <outlet property="d8Button" destination="RYI-rJ-lrm" id="gMj-4M-t2A"/>
                         <outlet property="result" destination="QGV-HC-UjE" id="5sw-GQ-vMg"/>
                     </connections>
                 </viewController>

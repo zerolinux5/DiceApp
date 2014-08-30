@@ -13,6 +13,7 @@
 @end
 
 @implementation DiceController
+int buttonEnabled = -1;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -88,11 +89,106 @@
 }
 */
 
+-(void) buttonReset:(int)number {
+    switch (number) {
+        case 2:
+            [self.d2Button setTitleColor:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
+            [self.d2Button setEnabled:YES];
+            break;
+        case 4:
+            [self.d4Button setTitleColor:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
+            [self.d4Button setEnabled:YES];
+            break;
+        case 6:
+            [self.d6Button setTitleColor:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
+            [self.d6Button setEnabled:YES];
+            break;
+        case 8:
+            [self.d8Button setTitleColor:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
+            [self.d8Button setEnabled:YES];
+            break;
+        case 10:
+            [self.d10Button setTitleColor:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
+            [self.d10Button setEnabled:YES];
+            break;
+        case 12:
+            [self.d12Button setTitleColor:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
+            [self.d12Button setEnabled:YES];
+            break;
+        case 16:
+            [self.d16Button setTitleColor:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
+            [self.d16Button setEnabled:YES];
+            break;
+        case 20:
+            [self.d20Button setTitleColor:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
+            [self.d20Button setEnabled:YES];
+            break;
+        default:
+            break;
+    }
+}
+
 - (IBAction)newRoll:(id)sender {
     [self.delegate DiceControllerDidBack:self];
 }
 
 - (IBAction)reRoll:(id)sender {
     [self diceRoll];
+}
+
+- (IBAction)d2Show:(id)sender {
+    [self buttonReset:buttonEnabled];
+    [self.d2Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.d2Button setEnabled:NO];
+    buttonEnabled = 2;
+}
+
+- (IBAction)d4Show:(id)sender {
+    [self buttonReset:buttonEnabled];
+    [self.d4Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.d4Button setEnabled:NO];
+    buttonEnabled = 4;
+}
+
+- (IBAction)d6Show:(id)sender {
+    [self buttonReset:buttonEnabled];
+    [self.d6Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.d6Button setEnabled:NO];
+    buttonEnabled = 6;
+}
+
+- (IBAction)d8Show:(id)sender {
+    [self buttonReset:buttonEnabled];
+    [self.d8Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.d8Button setEnabled:NO];
+    buttonEnabled = 8;
+}
+
+- (IBAction)d10Show:(id)sender {
+    [self buttonReset:buttonEnabled];
+    [self.d10Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.d10Button setEnabled:NO];
+    buttonEnabled = 10;
+}
+
+- (IBAction)d12Show:(id)sender {
+    [self buttonReset:buttonEnabled];
+    [self.d12Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.d12Button setEnabled:NO];
+    buttonEnabled = 12;
+}
+
+- (IBAction)d16Show:(id)sender {
+    [self buttonReset:buttonEnabled];
+    [self.d16Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.d16Button setEnabled:NO];
+    buttonEnabled = 16;
+}
+
+- (IBAction)d20Show:(id)sender {
+    [self buttonReset:buttonEnabled];
+    [self.d20Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.d20Button setEnabled:NO];
+    buttonEnabled = 20;
 }
 @end
