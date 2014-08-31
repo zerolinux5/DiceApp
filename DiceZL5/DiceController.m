@@ -182,12 +182,13 @@ Dice *d20;
     buttonEnabled = 2;
     
     NSString *arrayLabel = @"";
-    label =  [[UILabel alloc] initWithFrame: CGRectMake(0,(screenWidth/2),screenHeight,50)];
+    label =  [[UILabel alloc] initWithFrame: CGRectMake(10,(screenWidth/2)+10,(screenHeight-30),100)];
     for(int i = 0; i < _d2;i++){
         NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d2 getArrayNum:i]];
         arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.textAlignment = NSTextAlignmentCenter;
+    label.numberOfLines = 0;
     label.text = arrayLabel;
     [self.view addSubview:label];
 }
@@ -202,12 +203,13 @@ Dice *d20;
     buttonEnabled = 4;
     
     NSString *arrayLabel = @"";
-    label =  [[UILabel alloc] initWithFrame: CGRectMake(0,(screenWidth/2),screenHeight,50)];
+    label =  [[UILabel alloc] initWithFrame: CGRectMake(10,(screenWidth/2)+10,(screenHeight-30),100)];
     for(int i = 0; i < _d4;i++){
         NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d4 getArrayNum:i]];
         arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.textAlignment = NSTextAlignmentCenter;
+    label.numberOfLines = 0;
     label.text = arrayLabel;
     [self.view addSubview:label];
 }
@@ -222,12 +224,13 @@ Dice *d20;
     buttonEnabled = 6;
     
     NSString *arrayLabel = @"";
-    label =  [[UILabel alloc] initWithFrame: CGRectMake(0,(screenWidth/2),screenHeight,50)];
+    label =  [[UILabel alloc] initWithFrame: CGRectMake(10,(screenWidth/2)+10,(screenHeight-30),100)];
     for(int i = 0; i < _d6;i++){
         NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d6 getArrayNum:i]];
         arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.textAlignment = NSTextAlignmentCenter;
+    label.numberOfLines = 0;
     label.text = arrayLabel;
     [self.view addSubview:label];
 }
@@ -242,12 +245,13 @@ Dice *d20;
     buttonEnabled = 8;
     
     NSString *arrayLabel = @"";
-    label =  [[UILabel alloc] initWithFrame: CGRectMake(0,(screenWidth/2),screenHeight,50)];
+    label =  [[UILabel alloc] initWithFrame: CGRectMake(10,(screenWidth/2)+10,(screenHeight-30),100)];
     for(int i = 0; i < _d8;i++){
         NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d8 getArrayNum:i]];
         arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.textAlignment = NSTextAlignmentCenter;
+    label.numberOfLines = 0;
     label.text = arrayLabel;
     [self.view addSubview:label];
 }
@@ -262,12 +266,13 @@ Dice *d20;
     buttonEnabled = 10;
     
     NSString *arrayLabel = @"";
-    label =  [[UILabel alloc] initWithFrame: CGRectMake(0,(screenWidth/2),screenHeight,50)];
+    label =  [[UILabel alloc] initWithFrame: CGRectMake(10,(screenWidth/2)+10,(screenHeight-30),100)];
     for(int i = 0; i < _d10;i++){
         NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d10 getArrayNum:i]];
         arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.textAlignment = NSTextAlignmentCenter;
+    label.numberOfLines = 0;
     label.text = arrayLabel;
     [self.view addSubview:label];
 }
@@ -282,12 +287,13 @@ Dice *d20;
     buttonEnabled = 12;
     
     NSString *arrayLabel = @"";
-    label =  [[UILabel alloc] initWithFrame: CGRectMake(0,(screenWidth/2),screenHeight,50)];
+    label =  [[UILabel alloc] initWithFrame: CGRectMake(10,(screenWidth/2)+10,(screenHeight-30),100)];
     for(int i = 0; i < _d12;i++){
         NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d12 getArrayNum:i]];
         arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.textAlignment = NSTextAlignmentCenter;
+    label.numberOfLines = 0;
     label.text = arrayLabel;
     [self.view addSubview:label];
 }
@@ -302,12 +308,13 @@ Dice *d20;
     buttonEnabled = 16;
     
     NSString *arrayLabel = @"";
-    label =  [[UILabel alloc] initWithFrame: CGRectMake(0,(screenWidth/2),screenHeight,50)];
+    label =  [[UILabel alloc] initWithFrame: CGRectMake(10,(screenWidth/2)+10,(screenHeight-30),100)];
     for(int i = 0; i < _d16;i++){
         NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d16 getArrayNum:i]];
         arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.textAlignment = NSTextAlignmentCenter;
+    label.numberOfLines = 0;
     label.text = arrayLabel;
     [self.view addSubview:label];
 }
@@ -322,12 +329,13 @@ Dice *d20;
     buttonEnabled = 20;
     
     NSString *arrayLabel = @"";
-    label =  [[UILabel alloc] initWithFrame: CGRectMake(0,(screenWidth/2),screenHeight,50)];
+    label =  [[UILabel alloc] initWithFrame: CGRectMake(10,(screenWidth/2)+10,(screenHeight-30),100)];
     for(int i = 0; i < _d20;i++){
         NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d20 getArrayNum:i]];
         arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.textAlignment = NSTextAlignmentCenter;
+    label.numberOfLines = 0;
     label.text = arrayLabel;
     [self.view addSubview:label];
 }
