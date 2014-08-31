@@ -14,6 +14,10 @@
 
 @implementation DiceController
 int buttonEnabled = -1;
+UILabel *label;
+CGRect screenRect;
+CGFloat screenWidth;
+CGFloat screenHeight;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,6 +32,11 @@ int buttonEnabled = -1;
 {
     [super viewDidLoad];
     [self diceRoll];
+    
+    screenRect = [[UIScreen mainScreen] bounds];
+    screenWidth = screenRect.size.width;
+    screenHeight = screenRect.size.height;
+    
 }
 
 -(void)diceRoll
@@ -49,26 +58,36 @@ int buttonEnabled = -1;
     [d16 setSides:16 setDice:_d16];
     Dice *d20 = [[Dice alloc] init];
     [d20 setSides:20 setDice:_d20];
-    
+
     //add the result one set at a time
     int result = 0;
     int temp = 0;
     temp = [d2 getNum];
+    
     result += temp;
     temp = [d4 getNum];
+    
     result += temp;
     temp = [d6 getNum];
+    
     result += temp;
     temp = [d8 getNum];
+    
     result += temp;
     temp = [d10 getNum];
+    
     result += temp;
     temp = [d12 getNum];
+    
     result += temp;
     temp = [d16 getNum];
+    
     result += temp;
     temp = [d20 getNum];
+    
     result += temp;
+    
+    //
     
     self.result.text = [NSString stringWithFormat:@"%d", result];
 }
@@ -138,19 +157,36 @@ int buttonEnabled = -1;
 - (IBAction)reRoll:(id)sender {
     //start this screen over
     [self buttonReset:buttonEnabled];
+    if(buttonEnabled == -1){
+        [label removeFromSuperview];
+    }
     buttonEnabled = -1;
     [self diceRoll];
 }
 
 //The methods for each button
 - (IBAction)d2Show:(id)sender {
+    if(buttonEnabled == -1){
+        [label removeFromSuperview];
+    }
     [self buttonReset:buttonEnabled];
     [self.d2Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d2Button setEnabled:NO];
     buttonEnabled = 2;
+    
+    NSString *arrayLabel = @"";
+    label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
+    for(int i = 0; i < _d2;i++){
+        //arrayLabel += @" ";
+    }
+    label.text = @"";
+    [self.view addSubview:label];
 }
 
 - (IBAction)d4Show:(id)sender {
+    if(buttonEnabled == -1){
+        [label removeFromSuperview];
+    }
     [self buttonReset:buttonEnabled];
     [self.d4Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d4Button setEnabled:NO];
@@ -158,6 +194,9 @@ int buttonEnabled = -1;
 }
 
 - (IBAction)d6Show:(id)sender {
+    if(buttonEnabled == -1){
+        [label removeFromSuperview];
+    }
     [self buttonReset:buttonEnabled];
     [self.d6Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d6Button setEnabled:NO];
@@ -165,6 +204,9 @@ int buttonEnabled = -1;
 }
 
 - (IBAction)d8Show:(id)sender {
+    if(buttonEnabled == -1){
+        [label removeFromSuperview];
+    }
     [self buttonReset:buttonEnabled];
     [self.d8Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d8Button setEnabled:NO];
@@ -172,6 +214,9 @@ int buttonEnabled = -1;
 }
 
 - (IBAction)d10Show:(id)sender {
+    if(buttonEnabled == -1){
+        [label removeFromSuperview];
+    }
     [self buttonReset:buttonEnabled];
     [self.d10Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d10Button setEnabled:NO];
@@ -179,6 +224,9 @@ int buttonEnabled = -1;
 }
 
 - (IBAction)d12Show:(id)sender {
+    if(buttonEnabled == -1){
+        [label removeFromSuperview];
+    }
     [self buttonReset:buttonEnabled];
     [self.d12Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d12Button setEnabled:NO];
@@ -186,6 +234,9 @@ int buttonEnabled = -1;
 }
 
 - (IBAction)d16Show:(id)sender {
+    if(buttonEnabled == -1){
+        [label removeFromSuperview];
+    }
     [self buttonReset:buttonEnabled];
     [self.d16Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d16Button setEnabled:NO];
@@ -193,6 +244,9 @@ int buttonEnabled = -1;
 }
 
 - (IBAction)d20Show:(id)sender {
+    if(buttonEnabled == -1){
+        [label removeFromSuperview];
+    }
     [self buttonReset:buttonEnabled];
     [self.d20Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d20Button setEnabled:NO];
