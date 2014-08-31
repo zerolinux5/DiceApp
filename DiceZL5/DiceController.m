@@ -96,8 +96,6 @@ Dice *d20;
     
     result += temp;
     
-    //
-    
     self.result.text = [NSString stringWithFormat:@"%d", result];
 }
 
@@ -183,10 +181,11 @@ Dice *d20;
     [self.d2Button setEnabled:NO];
     buttonEnabled = 2;
     
-    NSString *arrayLabel = @"Hello";
+    NSString *arrayLabel = @"";
     label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
     for(int i = 0; i < _d2;i++){
-        //arrayLabel += @" ";
+        NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d2 getArrayNum:i]];
+        arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.text = arrayLabel;
     [self.view addSubview:label];
@@ -201,10 +200,11 @@ Dice *d20;
     [self.d4Button setEnabled:NO];
     buttonEnabled = 4;
     
-    NSString *arrayLabel = @"Hello";
+    NSString *arrayLabel = @"";
     label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
     for(int i = 0; i < _d4;i++){
-        //arrayLabel += @" ";
+        NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d4 getArrayNum:i]];
+        arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.text = arrayLabel;
     [self.view addSubview:label];
@@ -219,10 +219,11 @@ Dice *d20;
     [self.d6Button setEnabled:NO];
     buttonEnabled = 6;
     
-    NSString *arrayLabel = @"Hello";
+    NSString *arrayLabel = @"";
     label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
-    for(int i = 0; i < _d2;i++){
-        //arrayLabel += @" ";
+    for(int i = 0; i < _d6;i++){
+        NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d6 getArrayNum:i]];
+        arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.text = arrayLabel;
     [self.view addSubview:label];
@@ -237,10 +238,11 @@ Dice *d20;
     [self.d8Button setEnabled:NO];
     buttonEnabled = 8;
     
-    NSString *arrayLabel = @"Hello";
+    NSString *arrayLabel = @"";
     label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
-    for(int i = 0; i < _d2;i++){
-        //arrayLabel += @" ";
+    for(int i = 0; i < _d8;i++){
+        NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d8 getArrayNum:i]];
+        arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.text = arrayLabel;
     [self.view addSubview:label];
@@ -254,6 +256,15 @@ Dice *d20;
     [self.d10Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d10Button setEnabled:NO];
     buttonEnabled = 10;
+    
+    NSString *arrayLabel = @"";
+    label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
+    for(int i = 0; i < _d10;i++){
+        NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d10 getArrayNum:i]];
+        arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
+    }
+    label.text = arrayLabel;
+    [self.view addSubview:label];
 }
 
 - (IBAction)d12Show:(id)sender {
@@ -265,10 +276,11 @@ Dice *d20;
     [self.d12Button setEnabled:NO];
     buttonEnabled = 12;
     
-    NSString *arrayLabel = @"Hello";
+    NSString *arrayLabel = @"";
     label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
-    for(int i = 0; i < _d2;i++){
-        //arrayLabel += @" ";
+    for(int i = 0; i < _d12;i++){
+        NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d12 getArrayNum:i]];
+        arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.text = arrayLabel;
     [self.view addSubview:label];
@@ -283,10 +295,11 @@ Dice *d20;
     [self.d16Button setEnabled:NO];
     buttonEnabled = 16;
     
-    NSString *arrayLabel = @"Hello";
+    NSString *arrayLabel = @"";
     label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
-    for(int i = 0; i < _d2;i++){
-        //arrayLabel += @" ";
+    for(int i = 0; i < _d16;i++){
+        NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d16 getArrayNum:i]];
+        arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.text = arrayLabel;
     [self.view addSubview:label];
@@ -301,10 +314,11 @@ Dice *d20;
     [self.d20Button setEnabled:NO];
     buttonEnabled = 20;
     
-    NSString *arrayLabel = @"Hello";
+    NSString *arrayLabel = @"";
     label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
-    for(int i = 0; i < _d2;i++){
-        //arrayLabel += @" ";
+    for(int i = 0; i < _d20;i++){
+        NSString *strFromInt = [NSString stringWithFormat:@"%d ",[d20 getArrayNum:i]];
+        arrayLabel = [arrayLabel stringByAppendingString:strFromInt];
     }
     label.text = arrayLabel;
     [self.view addSubview:label];
