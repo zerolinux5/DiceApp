@@ -32,7 +32,7 @@ int buttonEnabled = -1;
 
 -(void)diceRoll
 {
-    // Do any additional setup after loading the view.
+    //Roll all the dice
     Dice *d2 = [[Dice alloc] init];
     [d2 setSides:2 setDice:_d2];
     Dice *d4 = [[Dice alloc] init];
@@ -50,6 +50,7 @@ int buttonEnabled = -1;
     Dice *d20 = [[Dice alloc] init];
     [d20 setSides:20 setDice:_d20];
     
+    //add the result one set at a time
     int result = 0;
     int temp = 0;
     temp = [d2 getNum];
@@ -90,6 +91,7 @@ int buttonEnabled = -1;
 */
 
 -(void) buttonReset:(int)number {
+    //reset the button that was last used
     switch (number) {
         case 2:
             [self.d2Button setTitleColor:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
@@ -129,13 +131,18 @@ int buttonEnabled = -1;
 }
 
 - (IBAction)newRoll:(id)sender {
+    //return to previous screen
     [self.delegate DiceControllerDidBack:self];
 }
 
 - (IBAction)reRoll:(id)sender {
+    //start this screen over
+    [self buttonReset:buttonEnabled];
+    buttonEnabled = -1;
     [self diceRoll];
 }
 
+//The methods for each button
 - (IBAction)d2Show:(id)sender {
     [self buttonReset:buttonEnabled];
     [self.d2Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

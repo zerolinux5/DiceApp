@@ -12,5 +12,6 @@
 
 -(void) setSides:(int)numOfSides setDice:(int)numOfDice;
 -(int) getNum;
+-(int) getArrayNum:(int)location;
 
 @end

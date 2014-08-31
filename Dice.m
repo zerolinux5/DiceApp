@@ -14,6 +14,7 @@
 @private
     int value;
     int dice;
+    int *array;
 }
 @end
 
@@ -27,9 +28,14 @@
 -(int) getNum{
     int randomNum = 0;
     for(int i = 0; i < dice;i++){
-        randomNum += (arc4random_uniform(value) + 1);
+        array[i] = (arc4random_uniform(value) + 1);
+        randomNum += array[i];
     }
     return randomNum;
+}
+
+-(int) getArrayNum:(int)location{
+    return array[location];
 }
 
 @end
