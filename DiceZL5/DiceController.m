@@ -18,6 +18,14 @@ UILabel *label;
 CGRect screenRect;
 CGFloat screenWidth;
 CGFloat screenHeight;
+Dice *d2;
+Dice *d4;
+Dice *d6;
+Dice *d8;
+Dice *d10;
+Dice *d12;
+Dice *d16;
+Dice *d20;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +39,15 @@ CGFloat screenHeight;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    d2 = [[Dice alloc] init];
+    d4 = [[Dice alloc] init];
+    d6 = [[Dice alloc] init];
+    d8 = [[Dice alloc] init];
+    d10 = [[Dice alloc] init];
+    d12 = [[Dice alloc] init];
+    d16 = [[Dice alloc] init];
+    d20 = [[Dice alloc] init];
+    
     [self diceRoll];
     
     screenRect = [[UIScreen mainScreen] bounds];
@@ -42,21 +59,13 @@ CGFloat screenHeight;
 -(void)diceRoll
 {
     //Roll all the dice
-    Dice *d2 = [[Dice alloc] init];
     [d2 setSides:2 setDice:_d2];
-    Dice *d4 = [[Dice alloc] init];
     [d4 setSides:4 setDice:_d4];
-    Dice *d6 = [[Dice alloc] init];
     [d6 setSides:6 setDice:_d6];
-    Dice *d8 = [[Dice alloc] init];
     [d8 setSides:8 setDice:_d8];
-    Dice *d10 = [[Dice alloc] init];
     [d10 setSides:10 setDice:_d10];
-    Dice *d12 = [[Dice alloc] init];
     [d12 setSides:12 setDice:_d12];
-    Dice *d16 = [[Dice alloc] init];
     [d16 setSides:16 setDice:_d16];
-    Dice *d20 = [[Dice alloc] init];
     [d20 setSides:20 setDice:_d20];
 
     //add the result one set at a time

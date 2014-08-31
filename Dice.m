@@ -14,7 +14,7 @@
 @private
     int value;
     int dice;
-    int *array;
+    NSMutableArray *items;
 }
 @end
 
@@ -23,19 +23,22 @@
 -(void) setSides:(int)numOfSides setDice:(int)numOfDice{
     value = numOfSides;
     dice = numOfDice;
+    items = [[NSMutableArray alloc] init];
 }
 
 -(int) getNum{
+    [items removeAllObjects];
     int randomNum = 0;
     for(int i = 0; i < dice;i++){
-        array[i] = (arc4random_uniform(value) + 1);
-        randomNum += array[i];
+        int currentRand = (arc4random_uniform(value) + 1);
+        [items addObject:[NSNumber numberWithInteger:currentRand]];
+        randomNum += currentRand;
     }
     return randomNum;
 }
 
 -(int) getArrayNum:(int)location{
-    return array[location];
+    return [[items objectAtIndex:location] intValue];
 }
 
 @end
