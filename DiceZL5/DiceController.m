@@ -191,6 +191,14 @@ CGFloat screenHeight;
     [self.d4Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d4Button setEnabled:NO];
     buttonEnabled = 4;
+    
+    NSString *arrayLabel = @"Hello";
+    label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
+    for(int i = 0; i < _d4;i++){
+        //arrayLabel += @" ";
+    }
+    label.text = arrayLabel;
+    [self.view addSubview:label];
 }
 
 - (IBAction)d6Show:(id)sender {
@@ -201,6 +209,14 @@ CGFloat screenHeight;
     [self.d6Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d6Button setEnabled:NO];
     buttonEnabled = 6;
+    
+    NSString *arrayLabel = @"Hello";
+    label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
+    for(int i = 0; i < _d2;i++){
+        //arrayLabel += @" ";
+    }
+    label.text = arrayLabel;
+    [self.view addSubview:label];
 }
 
 - (IBAction)d8Show:(id)sender {
@@ -211,6 +227,14 @@ CGFloat screenHeight;
     [self.d8Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d8Button setEnabled:NO];
     buttonEnabled = 8;
+    
+    NSString *arrayLabel = @"Hello";
+    label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
+    for(int i = 0; i < _d2;i++){
+        //arrayLabel += @" ";
+    }
+    label.text = arrayLabel;
+    [self.view addSubview:label];
 }
 
 - (IBAction)d10Show:(id)sender {
@@ -231,6 +255,14 @@ CGFloat screenHeight;
     [self.d12Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d12Button setEnabled:NO];
     buttonEnabled = 12;
+    
+    NSString *arrayLabel = @"Hello";
+    label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
+    for(int i = 0; i < _d2;i++){
+        //arrayLabel += @" ";
+    }
+    label.text = arrayLabel;
+    [self.view addSubview:label];
 }
 
 - (IBAction)d16Show:(id)sender {
@@ -241,6 +273,14 @@ CGFloat screenHeight;
     [self.d16Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d16Button setEnabled:NO];
     buttonEnabled = 16;
+    
+    NSString *arrayLabel = @"Hello";
+    label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
+    for(int i = 0; i < _d2;i++){
+        //arrayLabel += @" ";
+    }
+    label.text = arrayLabel;
+    [self.view addSubview:label];
 }
 
 - (IBAction)d20Show:(id)sender {
@@ -251,5 +291,13 @@ CGFloat screenHeight;
     [self.d20Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d20Button setEnabled:NO];
     buttonEnabled = 20;
+    
+    NSString *arrayLabel = @"Hello";
+    label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
+    for(int i = 0; i < _d2;i++){
+        //arrayLabel += @" ";
+    }
+    label.text = arrayLabel;
+    [self.view addSubview:label];
 }
 @end
