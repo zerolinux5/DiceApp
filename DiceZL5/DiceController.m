@@ -190,6 +190,7 @@ Dice *d20;
     label.textAlignment = NSTextAlignmentCenter;
     label.numberOfLines = 0;
     label.text = arrayLabel;
+    label.textColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
     [self.view addSubview:label];
 }
 
@@ -211,6 +212,7 @@ Dice *d20;
     label.textAlignment = NSTextAlignmentCenter;
     label.numberOfLines = 0;
     label.text = arrayLabel;
+    label.textColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
     [self.view addSubview:label];
 }
 
@@ -232,6 +234,7 @@ Dice *d20;
     label.textAlignment = NSTextAlignmentCenter;
     label.numberOfLines = 0;
     label.text = arrayLabel;
+    label.textColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
     [self.view addSubview:label];
 }
 
@@ -253,6 +256,7 @@ Dice *d20;
     label.textAlignment = NSTextAlignmentCenter;
     label.numberOfLines = 0;
     label.text = arrayLabel;
+    label.textColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
     [self.view addSubview:label];
 }
 
@@ -274,6 +278,7 @@ Dice *d20;
     label.textAlignment = NSTextAlignmentCenter;
     label.numberOfLines = 0;
     label.text = arrayLabel;
+    label.textColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
     [self.view addSubview:label];
 }
 
@@ -295,6 +300,7 @@ Dice *d20;
     label.textAlignment = NSTextAlignmentCenter;
     label.numberOfLines = 0;
     label.text = arrayLabel;
+    label.textColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
     [self.view addSubview:label];
 }
 
@@ -316,6 +322,7 @@ Dice *d20;
     label.textAlignment = NSTextAlignmentCenter;
     label.numberOfLines = 0;
     label.text = arrayLabel;
+    label.textColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
     [self.view addSubview:label];
 }
 
@@ -337,6 +344,7 @@ Dice *d20;
     label.textAlignment = NSTextAlignmentCenter;
     label.numberOfLines = 0;
     label.text = arrayLabel;
+    label.textColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
     [self.view addSubview:label];
 }
 @end
