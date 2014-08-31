@@ -157,7 +157,7 @@ CGFloat screenHeight;
 - (IBAction)reRoll:(id)sender {
     //start this screen over
     [self buttonReset:buttonEnabled];
-    if(buttonEnabled == -1){
+    if(buttonEnabled != -1){
         [label removeFromSuperview];
     }
     buttonEnabled = -1;
@@ -166,7 +166,7 @@ CGFloat screenHeight;
 
 //The methods for each button
 - (IBAction)d2Show:(id)sender {
-    if(buttonEnabled == -1){
+    if(buttonEnabled != -1){
         [label removeFromSuperview];
     }
     [self buttonReset:buttonEnabled];
@@ -174,17 +174,17 @@ CGFloat screenHeight;
     [self.d2Button setEnabled:NO];
     buttonEnabled = 2;
     
-    NSString *arrayLabel = @"";
+    NSString *arrayLabel = @"Hello";
     label =  [[UILabel alloc] initWithFrame: CGRectMake((screenHeight/2)-10,(screenWidth/2),50,50)];
     for(int i = 0; i < _d2;i++){
         //arrayLabel += @" ";
     }
-    label.text = @"";
+    label.text = arrayLabel;
     [self.view addSubview:label];
 }
 
 - (IBAction)d4Show:(id)sender {
-    if(buttonEnabled == -1){
+    if(buttonEnabled != -1){
         [label removeFromSuperview];
     }
     [self buttonReset:buttonEnabled];
@@ -194,7 +194,7 @@ CGFloat screenHeight;
 }
 
 - (IBAction)d6Show:(id)sender {
-    if(buttonEnabled == -1){
+    if(buttonEnabled != -1){
         [label removeFromSuperview];
     }
     [self buttonReset:buttonEnabled];
@@ -204,7 +204,7 @@ CGFloat screenHeight;
 }
 
 - (IBAction)d8Show:(id)sender {
-    if(buttonEnabled == -1){
+    if(buttonEnabled != -1){
         [label removeFromSuperview];
     }
     [self buttonReset:buttonEnabled];
@@ -214,7 +214,7 @@ CGFloat screenHeight;
 }
 
 - (IBAction)d10Show:(id)sender {
-    if(buttonEnabled == -1){
+    if(buttonEnabled != -1){
         [label removeFromSuperview];
     }
     [self buttonReset:buttonEnabled];
@@ -224,7 +224,7 @@ CGFloat screenHeight;
 }
 
 - (IBAction)d12Show:(id)sender {
-    if(buttonEnabled == -1){
+    if(buttonEnabled != -1){
         [label removeFromSuperview];
     }
     [self buttonReset:buttonEnabled];
@@ -234,7 +234,7 @@ CGFloat screenHeight;
 }
 
 - (IBAction)d16Show:(id)sender {
-    if(buttonEnabled == -1){
+    if(buttonEnabled != -1){
         [label removeFromSuperview];
     }
     [self buttonReset:buttonEnabled];
@@ -244,7 +244,7 @@ CGFloat screenHeight;
 }
 
 - (IBAction)d20Show:(id)sender {
-    if(buttonEnabled == -1){
+    if(buttonEnabled != -1){
         [label removeFromSuperview];
     }
     [self buttonReset:buttonEnabled];
