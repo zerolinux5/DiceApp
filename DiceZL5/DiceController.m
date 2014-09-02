@@ -68,7 +68,7 @@ Dice *d20;
     [d16 setSides:16 setDice:_d16];
     [d20 setSides:20 setDice:_d20];
 
-    //add the result one set at a time
+    //add the result one set at a time in case want to do something with each value later
     int result = 0;
     int temp = 0;
     temp = [d2 getNum];
@@ -173,9 +173,11 @@ Dice *d20;
 
 //The methods for each button
 - (IBAction)d2Show:(id)sender {
+    //check if need to remove old label
     if(buttonEnabled != -1){
         [label removeFromSuperview];
     }
+    //Make a new label and set its preferences. Need to make this into a method
     [self buttonReset:buttonEnabled];
     [self.d2Button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.d2Button setEnabled:NO];

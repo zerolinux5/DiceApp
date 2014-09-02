@@ -31,6 +31,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+//Send the values over via segue to get how many of each dice
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"dice"]) {
@@ -56,6 +58,7 @@
     }
 }
 
+//Reset all the values
 - (void)DiceControllerDidBack:(DiceController *)controller
 {
     self.d2Stepper.value = 0;
@@ -77,6 +80,8 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+
+//connect the steppers to the corresponding values
 - (IBAction)d2StepFunction:(UIStepper *)sender {
     int value = sender.value;
     self.d2Int.text = [NSString stringWithFormat:@"%03d", value];

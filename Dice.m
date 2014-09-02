@@ -26,6 +26,7 @@
     items = [[NSMutableArray alloc] init];
 }
 
+//Add to the mutable array and to the total value
 -(int) getNum{
     [items removeAllObjects];
     int randomNum = 0;
@@ -37,6 +38,7 @@
     return randomNum;
 }
 
+//Access each index, the user should know how far to index
 -(int) getArrayNum:(int)location{
     return [[items objectAtIndex:location] intValue];
 }
