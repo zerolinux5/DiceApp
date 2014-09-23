@@ -400,12 +400,12 @@
                             <constraint firstItem="Y7i-Gk-2jB" firstAttribute="leading" secondItem="RYI-rJ-lrm" secondAttribute="trailing" constant="8" id="YsG-rm-jYD"/>
                             <constraint firstItem="QGV-HC-UjE" firstAttribute="leading" secondItem="w27-AD-kig" secondAttribute="trailing" constant="8" id="ZnE-Mb-tjF"/>
                             <constraint firstItem="2ju-Kt-RcK" firstAttribute="leading" relation="lessThanOrEqual" secondItem="k5y-2P-0e2" secondAttribute="leading" constant="72" id="Zs6-dJ-opo"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b6N-gd-GHo" secondAttribute="trailing" constant="50" id="h3O-3v-k7e"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b6N-gd-GHo" secondAttribute="trailing" constant="100" id="h3O-3v-k7e"/>
                             <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="b6N-gd-GHo" secondAttribute="trailing" constant="168" id="m5E-4m-9Dp"/>
                             <constraint firstItem="b6N-gd-GHo" firstAttribute="leading" secondItem="QGV-HC-UjE" secondAttribute="trailing" constant="8" id="sfr-d7-zIO"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="U3g-Sw-AHp" secondAttribute="trailing" constant="25" id="vCQ-hn-gN6"/>
                             <constraint firstItem="zO9-ra-Kht" firstAttribute="leading" secondItem="GM7-9z-GxR" secondAttribute="trailing" constant="8" id="vN0-NV-jfb"/>
-                            <constraint firstItem="w27-AD-kig" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="k5y-2P-0e2" secondAttribute="leading" constant="50" id="zqa-uc-gHp"/>
+                            <constraint firstItem="w27-AD-kig" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="k5y-2P-0e2" secondAttribute="leading" constant="60" id="zqa-uc-gHp"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
